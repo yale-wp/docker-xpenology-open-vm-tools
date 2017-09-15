@@ -5,6 +5,7 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 COPY run.sh /run.sh
+COPY shutdown.sh /sbin/shutdown
 
 CMD [ "/run.sh" ]
 
